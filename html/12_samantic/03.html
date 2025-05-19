@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    /* --------- header --------- */
+    header{
+      border: 2px solid black;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+    }
+    header h1{
+      float: left;
+      background-color: yellow;
+      text-align: center;
+      align-content: center;
+      font-weight: bold;
+      width: 170px;
+      height: 96px;
+    }
+
+    header nav{
+      float: right;
+      width: 300px;
+      height: 96px;
+      background-color: #fae1e5;
+    }
+
+    header nav ul:first-child{
+      background-color: yellow;
+      align-content: center;
+    }
+    header nav ul:first-child li{
+      float: left;
+      width: 74px;
+      text-align: center;
+    }
+
+    header nav ul:last-child{
+      background-color: orange;
+      align-content: center;
+      margin-top: 40px;
+    }
+
+    header nav ul:last-child li{
+      float: left;
+      width: 74px;
+      text-align: center;
+    }
+    /* --------- main --------- */
+    #main{
+      width: 1000px;
+      height: 500px;
+      padding-bottom: 30px;
+      margin: 0 auto;
+    }
+
+    div section{
+      float: left;
+      width: 750px;
+      margin-top: 10px;
+    }
+
+    div section article, div aside{
+      padding: 15px;
+      border: 2px solid black;
+    }
+
+    div section article{
+      width: 730px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+    div section article h2{
+      background-color: pink;
+    }
+    div section article p{
+      width: 650px;
+    }
+
+    div aside{
+      float: right;
+      width: 250px;
+      height: 310px;
+      margin-top: 10px;
+    }
+
+    .bannerbox{
+      margin-top: 10px;
+      background-color: dimgray;
+    }
+
+
+
+
+
+    /* --------- footer --------- */
+    footer{
+      width: 1000px;
+      height: 50px;
+      margin: 0 auto;
+      background-color: pink;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+<!--header(시맨틱 태그)-->
+<header>
+  <h1>WEB-logo</h1>
+  <!--nav(시맨틱 태그)-->
+  <nav>
+    <ul>
+      <li>menu-1</li>
+      <li>menu-1</li>
+      <li>menu-1</li>
+      <li>menu-1</li>
+    </ul>
+
+    <ul>
+      <li>menu-2</li>
+      <li>menu-2</li>
+      <li>menu-2</li>
+      <li>menu-2</li>
+    </ul>
+  </nav>
+</header>
+
+<!--본문 감싸주는 박스는 일반 선택자 박스로 지정-->
+<div id="main">
+  <!--왼쪽 section (시맨틱 태그)-->
+  <section>
+    <!--article (시맨틱 태그)-->
+    <article>
+      <h2>Main Article</h2>
+      <p>
+        ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+      </p>
+    </article>
+    <!--article (시맨틱 태그)-->
+    <article>
+      <h2>Main Article</h2>
+      <p>
+        ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+      </p>
+    </article>
+    <!--article (시맨틱 태그)-->
+    <article>
+      <h2>Main Article</h2>
+      <p>
+        ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+      </p>
+    </article>
+  </section>
+  <!--오른쪽 aside (시맨틱 태그)-->
+  <aside>
+    <h2>Right aside</h2>
+    <p>
+      ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.
+    </p>
+    <input type="email" />
+    <button>mailto</button>
+    <div class="bannerbox">
+      <h2>TEXT</h2>
+      <p>banner</p>
+    </div>
+  </aside>
+
+</div>
+
+<!--하단 footer(시맨틱 태그)-->
+<footer>
+  <p>HTML5 COPYRIGHT</p>
+</footer>
+</body>
+</html>
