@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      div 는 block 속성이지만, float 속성을 적용하면 너비와 높이가 콘텐트에 맞춰 짐.
+     */
+    div{
+      width: 300px;
+      height: 300px;
+      border: 2px solid #000;
+    }
+    .box1{
+      float: left; /* 해당 요소를 왼쪽으로 배치 */
+    }
+    .box2{
+      float: left; /* 해당 요소를 왼쪽으로 배치 */
+    }
+    .box3{
+      float: right; /* 해당 요소를 오른쪽으로 배치 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">01</div>
+  <div class="box2">02</div>
+  <div class="box3">03</div>
+</body>
+</html>

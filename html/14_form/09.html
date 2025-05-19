@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    label{
+      display: block;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <form action="./action.php" method="post">
+
+      <!--
+       *type="search"
+       검색 필드를 만들 때 사용. 이전에는 텍스트 필드를 주로 사용했지만 html5에서는 필드들이 세분화 됨.
+       검색 키워드를 입력할 경우 키워드를 지울 수 있도록 X 표시가 나타남.
+
+       *placeholder : 사용자가 입력할 떄 입력란에 적당한 힌트 내용을 표시해 주고,
+       그 필드를 클릭하면 내용이 사라지도록 만들때 사용.
+       이렇게 하면 텍스트 필드 앞에 제목을 사용하지 않고도 사용자에게 해당 필드에 어떤 내용을 입력해야 할지 알려 줄 수 있어서 편리.
+       -->
+      <label><input type="search" name="search" placeholder="검색어를 입력해 주세요!!"></label>
+
+      <!--
+      (중요!)* required: submit 전 반드시 채워져 있어야 하는 입력 필드를 명시
+
+       *type="email"
+       메일 주소를 입력할 경우 이메일 양식에 맞게 작성되었는지 브라우저에서 체크-->
+      <label>email<input type="email" name="email" required></label>
+
+      <!--
+      *type="url"
+      웹 주소를 입력 받을 때 사용. 자동으로 주소 양식 검사-->
+      <label>url<input type="url" name="url" required></label>
+
+
+      <!--
+	  * type="tel"
+	  전화번호를 입력할 수 있는 필드. 모바일에서는 숫자 키보드로 자동 전환.-->
+      <label>tel <input type="tel" name="tel"/></label>
+
+      <!--
+	  * type="number"
+	  숫자 생성 양식. min은 ~부터라는 의미, max는 ~까지하는 의미, step은 클릭할 때 값.
+	  모바일에서는 숫자 키보드로 자동 전환.-->
+      <!-- 형식은 1부터 100까지 이고 버튼 클릭시 값은 5씩 변경.-->
+      <label>number <input type="number" name="number" min="1" max="100" step="5"/></label>
+
+      <!--
+	  * type="range"
+	  슬라이더 막대를 움직여 값을 입력.  value는 초기값 -->
+      <label>range <input type="range" name="range" min="1" max="5" value="3"/></label>
+
+      <!--
+	  * type="time"
+	  시간을 지정.-->
+      <label>time <input type="time" name="time"/></label>
+
+      <!--
+	  * type="datetime"
+	  날짜, 시간을 지정.-->
+      <label>datetime <input type="datetime-local" name="datetime-local"/></label>
+
+
+
+      <input type="submit" value="전송">
+    </form>
+
+</body>
+</html>

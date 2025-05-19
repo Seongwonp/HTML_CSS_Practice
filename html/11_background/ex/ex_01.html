@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<style>
+        *{ margin: 0; padding: 0; box-sizing: border-box; }
+		img{
+			display: block;
+		}
+		div{
+			margin: 0 auto;
+		}
+        #top{
+            height: 500px;
+            width: 1000px;
+        }
+        #box_all{
+            background-color: yellow;
+			width: 1000px;
+			height: 500px;
+
+        }
+        #footer{
+			margin-top: 0;
+			width: 1000px;
+			height: 50px;
+        }
+
+
+
+        /* #top child */
+		#top > div{
+			float: left;
+			height: 500px;
+		}
+		#top > div:nth-child(1){
+			background-image: url("./img/0320-1.jpg");
+			width: 750px;
+		}
+		#top> div:nth-child(1) div{
+            float: left;
+			width: 250px;
+			height: 250px;
+			margin-top: 250px;
+			padding: 16px;
+		}
+		#top> div:nth-child(1) div h4{
+			margin-bottom: 10px;
+        }
+		#top > div:nth-child(2){
+			width: 250px;
+		}
+		#top > div:nth-child(2) div{
+			height: 250px;
+        }
+
+
+		/* #box_all child */
+		#box_all > ul{
+            width: 750px;
+            height: 500px;
+			float: left;
+        }
+
+		#box_all > ul > li{
+            width: 250px;
+            height: 250px;
+            float: left;
+            padding: 15px;
+            list-style-type: none;
+        }
+        #box_all > ul > li:nth-child(2n+1){
+            background-color: red;
+        }
+        #box_all > ul > li:nth-child(2n){
+            background-color: orange;
+        }
+
+		#box_all > div{
+			float: right;
+			width: 250px;
+			height: 500px;
+			padding: 10px;
+		}
+
+		/* footer child */
+		#footer > div{
+			width: 750px;
+			height: 50px;
+			background-color: gray;
+			float: left;
+			padding: 15px;
+			align-content: center;
+        }
+
+		#footer > div > ul{
+			float: left;
+			width: 750px;
+        }
+
+		#footer > div > ul > li{
+			float: left;
+			list-style-type: none;
+			padding: 5px;
+			font-size: 12px;
+			border-right: 1px dotted orange;
+			text-align: center;
+			width: 120px;
+        }
+		#footer > div > ul > li:last-child{
+			border-right: none;
+        }
+        #footer > div > ul > li:hover{
+			background-color: black;
+			color: white;
+			cursor: pointer;
+        }
+
+		#footer > div:nth-child(2){
+			width: 250px;
+			background-color: black;
+			text-align: center;
+        }
+
+
+
+
+
+	</style>
+	<title>Title</title>
+</head>
+<body>
+	<div>
+		<div id="top">
+			<div>
+				<div>
+					<h4>GLOBAL<br>
+						BUSINESS</h4>
+					<p>GLOBAL No.1 lifestyle,Media Shopping Leader
+						라이프스타일을 선도하는 세계최고의 미디어 쇼핑리더</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img src="./img/0320-2.jpg" alt="img2">
+					<img src="./img/0320-3.jpg" alt="img3">
+				</div>
+			</div>
+		</div>
+
+		<div id="box_all">
+			<ul>
+				<li>
+					<h5>CSV</h5>
+					<p>상생 이념을 통해 함께 성장하고
+						사회에 공헌하는 CSV 프로그램과
+						활동소식을 안내합니다.</p>
+				</li>
+				<li>
+					<h5>입점안내</h5>
+					<p>고객에게 늘 새롭고 Trendy한 제안을 하는 CJ O Shopping! 힘찬도약을 함께 할 동반자를 찾습니다.</p>
+				</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+			<div>7</div>
+		</div>
+
+		<div id="footer">
+			<div>
+				<ul>
+					<li>법적고지</li>
+					<li>이메일무단수집거부</li>
+					<li>이용약관</li>
+					<li>개인정보취급방침</li>
+					<li>고객센터</li>
+					<li>입찰공고</li>
+				</ul>
+			</div>
+			<div>
+				<select name="website" id="website">
+					<option value="cj그룹개열사바로가기" selected hidden>cj그룹개열사바로가기</option>
+					<option value="value1">value1</option>
+					<option value="value2">value2</option>
+					<option value="value3">value3</option>
+					<option value="value4">value4</option>
+					<option value="value5">value5</option>
+				</select>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

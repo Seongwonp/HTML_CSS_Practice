@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      * table-layout
+      콘텐츠에 맞게 셀 너비를 지정.
+      셀의 width 값을 지정하면 해당 크기에 맞게 화면에 맞춰 표시.
+      하지만 '영문을 띄어 쓰기 없이 길게 입력'을 하면 셀의 width 값은 무시되고, 내용이 한줄로 표시.
+
+      fixed : 셀 너비를 고정하여 셀이 내용에 따라 셀의 너비가 달라지지 않음.
+      auto : 기본 값. 셀의 내용에 따라 너비가 달라짐.
+
+      *table-layout: fixed; 일때
+      영문 글자가 셀 박으로 표기될 때 word-break: break-all; 사용
+     */
+    table{
+      width:400px;
+      border: 2px solid #000;
+      border-collapse: collapse; /* 테두리 통합(가장 많이씀!!!) */
+      /*border-spacing: 20px 40px;*/
+      table-layout: fixed;
+      word-break: break-all;
+    }
+    td{
+      height: 40px;
+      border: 1px dotted #000;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>표 스타일</caption>
+    <tr>
+      <td>fsadjfdsafdgsajfkadsfsadhjfdsahflsadfjlkahlahjfkaddfafdasdafdfdasaf</td>
+      <td>뷁쉙긹뭵뷁쉙긹뭵뷁쉙긹뭵뷁쉙긹뭵뷁쉙긹뭵뷁쉙긹뭵뷁쉙긹뭵</td>
+    </tr>
+    <tr>
+      <td>11:00~14:30</td>
+      <td>16:00~19:00</td>
+    </tr>
+  </table>
+</body>
+</html>

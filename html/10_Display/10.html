@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    /*
+       09.html 의 CSS 중복을 줄임
+     */
+    div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+      float: left;
+      margin: 10px;
+    }
+
+    .scroll_box1{
+      /* 가로, 세로 스크롤 바 모두 보임*/
+      overflow: scroll;
+    }
+
+
+    .scroll_box2,.scroll_box3{
+      margin-left: 30px;
+    }
+    .scroll_box2{
+      /*  스크롤 바를 가로만 표시 */
+      overflow-x: scroll; /* 가로 스크롤바를 표시*/
+      overflow-y: hidden; /* 세로 스크롤바를 숨김*/
+    }
+    .scroll_box3{
+      /*스크롤 바를 세로만 표시*/
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+    }
+  </style>
+</head>
+<body>
+  <!--스크롤 바를 가로, 세로 모두 표시-->
+  <div class="scroll_box1">
+    <h4>SCROLL-X,Y</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+  <!--스크롤 바를 가로만 표시-->
+  <div class="scroll_box2">
+    <h4>SCROLL-X</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+  <!--스크롤 바를 세로만 표시-->
+  <div class="scroll_box3">
+    <h4>SCROLL-Y</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+</body>
+</html>

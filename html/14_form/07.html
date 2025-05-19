@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <!--
+      *type="color" 색상값 선택하기
+
+      특정 색상값을 선택할 때 사용.
+      색상 선택 양식을 생성. 선택 시 색상 선택화면이 나타나면 색상을 선택할 수 있음.
+    -->
+  <form name="frmPost" action ="./action.php" method="post">
+    <label for="color">색상 선택</label>
+    <input type="color" name="color" id="color" value="#FF0000">
+
+    <input type="submit" value="전송">
+
+  </form>
+</body>
+</html>

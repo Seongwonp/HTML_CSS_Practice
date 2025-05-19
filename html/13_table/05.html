@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    td, th{
+       border: 1px solid black;
+     }
+  </style>
+</head>
+<body>
+  <!--
+    표를 만든 후 표의 행이나 열을 합치는 속성으로 셀을 만드는 <td><th> 태그에서 사용.
+
+    colspan="합쳐지는 열의 개수" : 가로의 병합
+    rowspan="합쳐지는 행의 개수" : 세로의 병합
+
+  -->
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">코리아교육그룹</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

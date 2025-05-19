@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>회원가입</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="./action.php" method="post">
+		<table class="NoBorder">
+			<tr class="NoBorder">
+				<td class="NoBorder">
+						<p><b id="title">회원가입</b><span class="location">홈 > 회원 > <span class="point">회원가입</span></span></p>
+				</td>
+			</tr>
+			<tr class="NoBorder">
+				<td class="NoBorder">
+					<hr>
+				</td>
+			</tr>
+			<tr class="NoBorder">
+				<td class="NoBorder" >
+					<p><span class="important">*</span>필수입력사항</p>
+					<table>
+						<tr>
+							<th>아이디<span class="important">*</span></th>
+							<td><input type="text" name="id" required> 영문자,숫자,_만 입력 가능. 최소 3자이상 입력하세요.</td>
+						</tr>
+						<tr>
+							<th>비밀번호<span class="important">*</span></th>
+							<td><input type="password" name="pw" required> 영문자,숫자,특수문자 중 2종류 이상의 조합으로 10자이상 입력하세요.</td>
+						</tr>
+						<tr>
+							<th>비밀번호 확인<span class="important">*</span></th>
+							<td><input type="password" name="checkPw" required></td>
+						</tr>
+						<tr>
+							<th>이름<span class="important">*</span></th>
+							<td><input type="text" name="name" required></td>
+						</tr>
+						<tr>
+							<th>닉네임<span class="important">*</span></th>
+							<td>공백없이 한글,영문 숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
+								닉네임을 바꾸시면 앞으로 60일 이내에는 변경 할 수 없습니다.
+								<input type="text" name="nickname" required>
+							</td>
+						</tr>
+						<tr>
+							<th>E-mail<span class="important">*</span></th>
+							<td><input type="email" name="email" required></td>
+						</tr>
+						<tr>
+							<th>휴대폰번호<span class="important">*</span></th>
+							<td><input type="tel" name="tel" required></td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td>우편번호
+								<input type="text" name="locationNum" class="address"> <input type="button" name="findAddress" value="주소 검색" class="button1" ><br>
+								<input type="text" name="address"> 기본주소<br>
+								<input type="text" name="detailAddress"> 상세주소<br>
+								<input type="text" name="add"> 참고항목
+							</td>
+						</tr>
+						<tr>
+							<th>메일링서비스</th>
+							<td><input type="checkbox" name="emailService_Check" checked> 정보 메일을 받겠습니다. </td>
+						</tr>
+						<tr>
+							<th>SMS 수신여부</th>
+							<td><input type="checkbox" name="SMS_Check" checked> 휴대폰 문자메세지를 받겠습니다.</td>
+						</tr>
+						<tr>
+							<th>정보공개</th>
+							<td>정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.  <input type="checkbox" name="Agree_Check" checked > 다른분들이 나의 정보를 볼 수 있도록 합니다.</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr class="NoBorder">
+				<td class="buttonGroup"><input type="submit" name="sign" value="회원가입" class="SubmitButton">
+					<input type="button" name="cancel" value="취소" class="cancelButton"></td>
+			</tr>
+		</table>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    /*
+        *overflow: scroll 속성 사용
+        박스 (block)의 내부 스크롤 바를 지정하고자 할 때 사용.
+
+        overflow : 영역을 벗어나는 가로, 세로, 부분을 스크롤 바로 나타나게 하거나 숨김.
+        overflow-x : 가로 좌표에 대한 스크롤 바로 나타나게 하거나 숨김.
+        overflow-y : 세로 좌표에 대한 스크롤 바로 나타나게 하거나 숨김.
+     */
+    .scroll_box1{
+      /* 가로, 세로 스크롤 바 모두 보임*/
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+      float: left;
+      margin: 10px;
+      overflow: scroll;
+    }
+    .scroll_box2{
+      /*  스크롤 바를 가로만 표시 */
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+      float: left;
+      margin: 10px;
+      margin-left: 30px;
+      overflow-x: scroll; /* 가로 스크롤바를 표시*/
+      overflow-y: hidden; /* 세로 스크롤바를 숨김*/
+    }
+    .scroll_box3{
+      /*스크롤 바를 세로만 표시*/
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+      float: left;
+      margin: 10px;
+      margin-left: 30px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+    }
+  </style>
+</head>
+<body>
+  <!--스크롤 바를 가로, 세로 모두 표시-->
+  <div class="scroll_box1">
+    <h4>SCROLL-X,Y</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+  <!--스크롤 바를 가로만 표시-->
+  <div class="scroll_box2">
+    <h4>SCROLL-X</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+  <!--스크롤 바를 세로만 표시-->
+  <div class="scroll_box3">
+    <h4>SCROLL-Y</h4>
+    <p><img src="img/camera02.png" alt="대체이미지"></p>
+  </div>
+</body>
+</html>

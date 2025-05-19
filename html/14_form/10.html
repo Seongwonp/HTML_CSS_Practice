@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <!--
+    *textarea
+    장문의 글자를 입력 받을 때 주로 사용하는 글자박스.
+    이메일 양식에서나 메일내용이나 게시판의 글 내용을 적을 때 사용.
+    -->
+    <style>
+      textarea[name="contents"]{
+        width: 500px;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #666;
+        background-color: #eaeaea;
+        font-size: 16px;
+      }
+
+      textarea[name="contents"]:focus{
+        outline: none;
+      }
+      textarea[name="contents2"]:focus{
+        outline: 2px solid #b81616;
+      }
+
+    </style>
+    <form action ="./action.php" method="post">
+      <textarea name="contents"></textarea>
+
+
+      <!--
+      name: 다른 폼 요소와 구분하기 위해 텍스트 영역의 이름을 지음.
+      cols : 텍스트 영역의 너비를 문자 단위로 지정.
+      rows : 텍스트 영역의 높이를 줄 단위로 지정. 줄 개수가 많아지면 스크롤 바가 나타남.
+      -->
+      <textarea name="contents2" cols="60" rows="18"></textarea>
+      <input type="submit" value="전송">
+    </form>
+</body>
+</html>

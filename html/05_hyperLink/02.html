@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>텍스트 링크의 밑줄과 글자색 바꾸기</title>
+	<style>
+		a{
+		    text-decoration: none; /* 밑줄 제거 */
+			color: black;
+		}
+		a{
+			color: red; /* 택스트 색상 충돌 CSS 는 마지막에 적용된 속성을 적용 */
+		}
+	</style>
+</head>
+<body>
+    <!--
+        * 다양한 링크의 형태
+         1) 도메인 url: http://도메인주소
+         2) 문서/서브페이지전환: /문서이름.html ( 경로인식동일)
+         3) 임시링크 : #
+         4) 그외 연결
+          - <a href="mailto:관리자 메일 주소"> : 아웃룩 메일 계정 연결 시 사용
+          - <a href="tel:전화번호"> : 모바일 전화걸기 연결
+          - <a href="sms:전화번호"> : 모바일 문자 보내기 연결
+    -->
+
+	<p>
+		<a href ="https://www.naver.com">네이버</a>
+	</p>
+    <p>
+		<a href = "./01.html">문서 이동</a>
+	</p>
+    <p>
+		<!-- 아웃룩 메일 계정으로 연결할 때 -->
+		<a href = "mailto:swp20138993@gmail.com">관리자</a>
+	</p>
+    <p>
+		<!-- 모바일 전화걸기 연결 -->
+		<a href ="tel:01099784464">전화걸기</a>
+	</p>
+    <p>
+		<!-- 빈 링크 또는 임시 링크로 표시 -->
+		<a href="#">임시링크</a>
+	</p>
+		<div style="height: 6000px"></div>
+	    <a href="#">임시링크</a> <br>
+	    <a href="#none">임시링크 2</a>
+</body>
+</html>

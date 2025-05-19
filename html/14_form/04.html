@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+    <!--
+    *type="checkbox" : 체크 박스 선택하기
+    여러 개 선택 가능, 선택한 체크 박스의 value 값을 서버로 전송.
+    사용자가 선택하기 위한 항목으로 다중 체크가 필요할 때 주로 사용, 여러개의 항목을 2개이상 체크하는 것도 가능.
+
+    * label: 폼 요소에 레이블을 붙이기 위해 사용.
+    label 태그를 사용하면 폼 요소와 레이블 텍스트가 서로 연결되어 있다는 것을 브라우저가 인식
+
+    php(닷홈)에서는 checkbox 의 name 을 배열처리해야 함. -> name="hobby[]"
+    자바 계열에서는 배열처리를 하지 않음. -> name="hobby"
+    -->
+    <form action="./action.php" method="post">
+      <h4>취미</h4>
+
+      <input type="checkbox" name="hobby[]" value="sports" id="sportsId">
+      <label for="sportsId">스포츠</label>
+      <!-- for 에 해당 태그의 아이디 값을 지정하면 label 클릭 시에 해당 체크박스 선택, 해제 됨-->
+
+
+      <label><input type="checkbox" name="hobby[]" value="music">음악</label>
+      <!-- label 태그로 전체를 감싸도 동일한 기능.-->
+
+      <input name="hobby[]" type="checkbox" value="cook">
+      <label>요리</label>
+      <!-- 분리해서 사용하면 선택, 해제 기능 안됨.-->
+
+      <input type="submit" value="전송">
+
+    </form>
+</body>
+</html>

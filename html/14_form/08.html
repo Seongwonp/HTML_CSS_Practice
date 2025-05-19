@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+  <form name="frmPost" action ="./action.php" method="post">
+    <!--
+    *type="date"
+    생년월일과 같은 년/월/일에 대한 정보를 달력을 통해 선택-->
+    <label for="date2">날짜 선택</label>
+    <input type="date" name="date" id="date2">
+
+    <br>
+    <!--
+    *type="month"
+    년 / 월 에 대한 정보를 달력을 통해 선택-->
+    <input type="month" name="month">
+
+    <br>
+    <!--
+     *type="week"
+     년 / 주 에 대한 정보를 달력을 통해 선택-->
+    <input type="week" name="week">
+    <input type="submit" value="전송">
+  </form>
+</body>
+</html>

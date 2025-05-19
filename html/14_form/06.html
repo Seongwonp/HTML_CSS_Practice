@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+  <!--
+  *type="file" : 사용자 컴퓨터에서 특정 파일을 첨부.
+
+  파일 첨부 시에 반드시 form 태그에 enctype="multipart/form-data" 속성 사용.
+  서버는 업로드 파일의 제한 용량이 있으니 크기가 작은 파일로 테스트 할 것.(이미지 파일)
+  -->
+  <form action="./action.php" method="post" enctype="multipart/form-data">
+    <label>첨부파일</label>
+    <input type="file" name="addFile">
+
+    <input type="submit" value="업로드">
+
+  </form>
+</body>
+</html>

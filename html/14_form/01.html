@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+  <!--
+    * form : 여러 입력 양식을 그룹화하고 전송.
+
+    form을 만들고 사용자 화면을 구성하는 영역은 프런트엔드 영역에서 담당
+    form을 통해 전달 받은 데이터를 서버에서 가공하는 일은 백엔드 영역에서 처리
+
+    action : 특정 주소값이나 파일 위치. 폼 데이터가 전송되는 곳
+
+    method : 폼을 서버로 전송할때 http 메소드를 지정(=전송방식)
+       get : 주소표시줄에 사용자가 입력한 내용이 그대로 표시 : 보안이 위험
+       post: 대부분이 사용하는 방식, 내부적으로 보이지 않게 전송
+
+    type="reset" : 기존에 입력한 모든 값을 비우는 초기화 버튼
+    type="submit" : 사용자가 폼에 입력한 모든 데이터를 서버에 전송하는 버튼
+
+    input : type="속성" name = "이름(서버에서 사용하는 이름) 필수" id="css 나 자바스크립트에서 제어할 때 사용"
+  -->
+  <form action="./action.php" method="post">
+    <label for="memberId">ID</label>
+    <input type="text" name="memberId" id="memberId">
+
+    <label for="pwd">Password</label>
+    <input type="password" name ="pwd" id="pwd">
+
+    <input type="submit" value="로그인">
+    <input type="reset" value="재입력">
+  </form>
+</body>
+</html>

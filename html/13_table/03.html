@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		table{
+			border: 1px solid black;
+
+        }
+		thead , th{
+
+			width: 200px;
+			height: 30px;
+			border: 2px solid black;
+		}
+		tbody, td{
+			width: 200px;
+			height: 100px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		caption: 표에 제목을 붙일 때 사용
+		표에 제목을 붙일 때 <table> 태그 바로 다음에 <caption> 태그 사용
+		표의 위쪽 중앙에 표시
+	-->
+
+	<!--표의 시작-->
+	<table>
+		<caption>표의 제목</caption>
+		<thead>
+			<tr>
+				<th>제목1</th>
+				<th>제목2</th>
+			</tr>
+		</thead>
+		<!--행의 시작-->
+		<tr>
+			<!--열의 시작-->
+			<td>1행 1열</td>
+			<td>1행 2열</td>
+		</tr>
+		<tr>
+			<td>2행 1열</td>
+			<td>2행 2열</td>
+		</tr>
+	</table>
+</body>
+</html>

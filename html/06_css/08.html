@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>스타일시트</title>
+	<style>
+		body{
+            background: #000; /*주로 색상코드 사용*/
+            color: #fff;
+        }
+        body{
+            background: #999;
+            font-family: 'Pretendard',sans-serif; /*기본 글꼴*/
+            font-size: 20px;
+        }
+        body{
+            line-height: 30px; /*줄 간격*/
+        }
+		a{
+			color: #ff0;
+			text-decoration: none;
+		}
+		.color{
+			color: #f00;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 클래스 : 본문(class="name")
+		특정한 이름을 부여하며, html 문서 내에서 하나의 이름으로 여러군데 여러번 사용가능.
+		주로 작은 요소, 작은 단락, 변화가 잦을 스타일
+	 -->
+  <h4>Artwork Concept Drawing</h4>
+  <h1 class="color">아트웍 컨셉 드로잉</h1>
+  <p>
+    편집 <a href="#">포트폴리오</a>에 포함될 수 있는 북커버 및 도오하책 삽화 제작, 웹 포트폴리오에 포함될 수 있는
+	  <span class="color">아트웍 실습</span>,
+	  3D 캐릭터 디자인이나 모션 그래픽에 사용할 수 있는 <span class="color">아트웍 표현</span> 대하여 학습합니다.
+  </p>
+</body>
+</html>

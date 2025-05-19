@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      * 구조 선택자
+      특정한 위치에 있는 태그를 선택하는 선택자.
+
+      * 형태
+		:first-child  :  부모박스 안에서 형제 관계 중에서 첫 번째에 위치하는 태그 선택
+		:last-child  :  부모박스 안에서 형제 관계 중에서 마지막에 위치하는 태그 선택
+		:nth-child(수열)  :  부모박스 안에서 형제 관계 중에서 "앞에서" 수열번째의 태그 선택
+		:nth-last-child(수열)  :  부모박스 안에서 형제 관계 중에서 "뒤에서" 수열번째의 태그 선택
+
+		* 자주 사용하는 수열에는 숫자번째(숫자), 짝수열(2n), 홀수열(2n+1)
+     */
+    div span:first-child{ /* div의 자손 중 첫번째 자식에 해당하는 span 태그 지정.*/
+      background-color: red;
+    }
+
+    div p:first-child { /* div의 자손 중 첫번째 자식에 해당하는 p 태그 지정. 이문서에는 없음.*/
+      background-color: orange;
+    }
+
+    div span:last-child{
+      background-color: yellow;
+    }
+
+    div p:last-child{
+      background-color: green;
+    }
+
+    div span:nth-child(3){
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>text1</span>
+    <p>text2</p>
+    <span>text3</span>
+    <p>text4</p>
+  </div>
+</body>
+</html>

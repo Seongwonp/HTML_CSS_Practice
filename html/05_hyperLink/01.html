@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <title>하이퍼 텍스트 링크</title>
+  </head>
+  <body>
+  <!--
+    * a 태그: 웹페이지의 연결, url 연결 시 사용
+
+    1) 다른 페이지의 전환 ( 메뉴표현)
+    2) 글자와 같이 나열되는 성격!(inline 속성)
+    3) 링크연결 시 기본 스타일 (글자색, 밑줄, 손모양의 커서) / 브라우저내에서 바로 전환
+
+    * href = h + ref : h : hypertext, ref : reference
+
+    * target 값의 종류
+    target = "_self" -> 현재 페이지에서의 전환. 기본값
+    target = "_blank" -> 새로운 탭에서 전환
+
+    * 스타일의 변화
+    기본값 : 밑줄 + 텍스트:파란색
+    방문후 : 밑줄 + 텍스트:보라색
+    클릭시 : 밑줄 + 텍스트:빨간색
+  -->
+    <p>
+      <!-- target 값을 지정하지 않으면 _self 와 같음-->
+      <!-- 외부링크의 경우 프로토콜을 반드시 적어줘야 함.
+       프로토콜: https:// 도메인 : www.naver.com -->
+      <a href ="https://www.naver.com">네이버</a>
+    </p>
+    <p>
+      <!-- 현재 페이지에서 바로 페이지 이동-->
+      <a href = "https://www.daum.net" target="_self">다음(_self)</a>
+    </p>
+    <p>
+      <!-- 현재 페이지는 그대로 두고 새로운브라우저 창이나 탭을 열어 이동 -->
+      <a href = "https://www.starbucks.co.kr/index.do" target="_blank">StarBucks(_blank)</a>
+    </p>
+  </body>
+</html>

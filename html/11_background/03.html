@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    /*
+      * background-size 속성
+      배경 이미지에 대한 size를 지정하기 위한 값
+
+      background-size : 100%, cover, contain, px 값 / 배경이미지 크기
+      background-repeat : no-repeat, repeat-x, repeat-y / 배경이미지 반복
+     */
+    body{
+      background-image: url(./img/art.jpg);
+      /* 배경 이미지 사이즈 100%는 (body 태그에 적용한 경우) 브라우저의 가로 길이 기준으로 100%.
+      상대 크기라서 브라우저 폭을 줄이면 같이 줄어듬*/
+      background-size: 100%;
+      /*
+        배경 이미지의 초기 반복 값은 가로, 세로 모두 반복
+        repeat : 기본값
+        no-repeat 은 반복하지 않음
+        repeat-x 는 가로로 반복
+        repeat-y 는 세로로 반복
+       */
+      background-repeat: no-repeat;
+
+
+
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>

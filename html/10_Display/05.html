@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{margin: 0; padding: 0; box-sizing: border-box;}
+		div{
+			width: 200px;
+			height: 100px;
+			border: 2px solid black;
+			background: #a2e5b3;
+			text-align: center;
+		}
+		/*
+		    수직 중앙 정렬에 사용하는 방법 3가지
+
+		    case1. line-height 로 부모 박스의 높이를 지정.
+		 */
+		    .line-height{
+				line-height: 100px;
+			}
+
+			/* case 2. display 의 table-cell 속성 적용 후 vertical-align 사용 */
+		    .cell{
+				display: table-cell;
+				vertical-align: middle;
+			}
+			/* case 3. position 이 absolute 일 경우 top: 50%; transform: translateY(-50%); 적용*/
+			.rel{
+				position: relative;
+			}
+			.rel p{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: calc(50% - 50px);
+			}
+
+			/*
+			case 4. align-content 를 디폴트 레이아웃에 추가하여 단 한 줄의 CSS 속성으로 수직 정렬이 가능
+			2024년 드디어 브라우저들이 Flow 레이아웃에 align-content를 구현함
+			이제 flexbox, grid 없이 CSS 속성 1개 만으로 정렬 됨
+			*/
+			.align_content{
+				align-content: center;
+			}
+
+	</style>
+</head>
+<body>
+    <div class="line-height">vertical-align</div>
+    <div class="cell">vertical-align</div>
+	<div class="rel"><p>vertical-align</p></div>
+	<div class="align_content">vertical-align</div>
+</body>
+</html>

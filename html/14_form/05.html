@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+  <!--
+   * type="radio" : 라디오 박스 선택하기
+   name 값을 똑같이 입력하면 여러 데이터 중에서 하나를 선택 할 수 있음.
+   짧은 학목에 대한 선택이 필요할 때 주로 활용되며, 반드시 한 가지 항목을 선택해야 할 때 사용.
+   name 값을 동일하게 작성해야 같은 그룹으로 인식.
+
+  -->
+  <form action ="./action.php" method="post">
+    <h4>직업</h4>
+
+    <input type="radio" name="job" value="design" id="design">
+    <label for="design">UI/UX 디자이너</label>
+
+    <input type="radio" name="job" value="front_end_dev" id="front_end">
+    <label for="front_end">프런트엔드 개발자</label>
+
+    <input type="radio" name="job" value="back_end_dev" id="back_end" checked="checked">
+    <label for="back_end">백엔드 개발자</label>
+
+    <input type="submit" value="전송">
+
+
+  </form>
+</body>
+</html>

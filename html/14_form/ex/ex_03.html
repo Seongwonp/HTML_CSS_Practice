@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<title>개인정보 입력</title>
+	<style>
+		body{
+                font-family: "Nanum Pen Script", cursive;
+                font-weight: 400;
+                font-style: normal;
+        }
+        table {
+            border: 1px solid #b3b3b3;
+            background-color: #cacaca;
+            width: 900px;
+            padding: 10px;
+			margin: 10px;
+        }
+
+        .title1 {
+            text-align: left;
+            padding-left: 8px;
+            border-bottom: 1px solid #b3b3b3;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        input {
+            height: 40px;
+            width: 100%;
+            border: 1px solid #b3b3b3;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        span {
+            color: red;
+            padding-left: 5px;
+        }
+	</style>
+</head>
+<body>
+
+<table>
+	<tr>
+		<th colspan="2" class="title1"><h3>사이트 이용정보 입력</h3></th>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div>
+				<p>아이디<span>*</span></p>
+				<input type="text" name="id" id="id" placeholder=" 아이디">
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				<p>비밀번호<span>*</span></p>
+				<input type="password" name="pw" id="pw" placeholder=" 비밀번호">
+			</div>
+		</td>
+		<td>
+			<div>
+				<p>비밀번호 확인<span>*</span></p>
+				<input type="password" name="checkPw" id="checkPw" placeholder=" 비밀번호 확인">
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th class="title1"><h3>개인정보 입력</h3></th>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				<p>이름<span>*</span></p>
+				<input type="text" name="name" id="name" placeholder=" 이름">
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				<p>닉네임<span>*</span></p>
+				<input type="text" name="Nickname" id="Nickname" placeholder=" 닉네임">
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				<p>E-mail<span>*</span></p>
+				<input type="email" name="email" id="email" placeholder=" E-mail">
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

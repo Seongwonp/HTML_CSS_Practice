@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    border: 0;
+}
+a {
+    color: #000;
+}
+
+
+
+#top, #banner, #content, #bottom {
+    width: 100%;
+}
+
+#top{
+    height: 120px;
+}
+#banner{
+    height: 464px;
+    background-image: url(img/picture01.png);
+    background-position: center;
+    align-content: center;
+}
+#contents{
+    height: 400px;
+}
+#bottom{
+    background-color: #ececec;
+    height: 304px;
+    text-align: center;
+}
+
+/* top child */
+#top ul{
+    text-align: center;
+    padding-top: 30px ;
+}
+#top ul li{
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 10px;
+}
+#top ul li:nth-child(4){
+    height: 50px;
+}
+#top ul li:last-child{
+    border-right: none;
+}
+
+#top ul li:hover{
+    background-color: #fba5a5;
+    cursor: pointer;
+}
+#top ul li:nth-child(4):hover, #top ul li:last-child:hover{
+    cursor: default;
+    background-color: #fff;
+}
+
+/* banner child */
+#banner > div{
+    background-color: #f6f3b1;
+    height: 230px;
+    width: 300px;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+}
+
+#banner > div > p{
+    font-size: 10px;
+}
+
+#banner > div > input{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 10px 0; /* 위 아래 공백추가*/
+    padding: 0;
+    border: none;
+}
+
+#banner > div > input[name="zipcode"]{
+    background-color: #fff;
+}
+#banner > div > input[name="menu"]{
+    background-color: orange;
+}
+
+/* contents child */
+#contents > div:first-child{
+    height: 120px;
+    background-color: #fff;
+    margin: 0 auto;
+
+}
+#contents > div:first-child > div{
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+#contents > div:nth-child(2){
+    height: 280px;
+    align-content: center;
+}
+
+#contents > div:nth-child(2) > ul{
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+}
+
+#contents > div:nth-child(2) > ul > li{
+    width: 200px;
+    height: 170px;
+    padding: 5px;
+    margin-right: 80px;
+    list-style-type: none;
+    border-bottom: 2px solid #cdcdcd;
+    background-color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#contents > div:nth-child(2) > ul > li > img{
+    display: inline-block;
+}
+
+
+/* bottom child */
+#bottom > div{
+    margin: 0 auto;
+    width: 914px;
+}
+#bottom > div > div{
+    float: left;
+}
+#bottom > div > div:nth-child(1){
+    width: 460px;
+    margin-top: 100px;
+    text-align: left;
+}
+#bottom > div > div:nth-child(1) > p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#bottom > div > div:nth-child(2){
+    width: 314px;
+
+}

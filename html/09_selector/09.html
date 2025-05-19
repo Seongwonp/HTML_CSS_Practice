@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		/*
+			* 형태 구조 선택자
+			일반 구조 선택자와 비슷하지만 태그 형태를 구분
+
+			:first-of-type : 부모박스 안에서 형제 관계 중에서 첫 번째에 위치하는 특정한 태그 선택
+			:last-of-type : 부모박스 안에서 형제 관계 중에서 마지막에 위치하는 특정한 태그 선택
+			:nth-of-type(수열) : 부모박스 안에서 형제 관계 중에서 앞에서 수열번째의 특정한 태그 선택
+			:nth-last-of-type(수열) : 부모박스 안에서 형제 관계 중에서 뒤에서 수열번째의 특정한 태그 선택
+		 */
+		h1:first-of-type{ /* h1 태그 중에서 첫 번째 h1 태그의 글자 색상 지정 */
+			color: orange;
+		}
+		h2:first-of-type{ /* h2 태그 중에서 첫 번째 h2 태그의 글자 색상 지정. 구조 선택자라면 문서에 없음. */
+			color: red;
+		}
+		h2:last-of-type{ /* h2 태그 중에서 마지막 h2 태그의 글자 색상과 배경 지정. 구조 선택자라면 문서에 없음. */
+			color: white;
+			background-color: orange;
+		}
+
+		div span:first-of-type{
+			background-color: red;
+        }
+		div p:first-of-type{
+			background: blue;
+        }
+        div span:last-of-type{
+			background-color: yellow;
+        }
+        div p:last-of-type{
+			background-color: green;
+        }
+
+	</style>
+</head>
+<body>
+	<h1>header-1</h1>
+	<h2>header-2</h2>
+	<h3>header-3</h3>
+	<h3>header-3</h3>
+	<h2>header-2</h2>
+	<h1>header-1</h1>
+
+	<div>
+		<span>text1</span>
+		<p>text2</p>
+		<span>text3</span>
+		<p>text4</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      html 초기 형태는 레이아웃 (예를 들어 다단 편집)의 활용에 신경을 쓰지 않을 때라서
+      table 태그가 레이아웃을 잡는 용도로 사용.
+
+      html4 부터는 레이아웃 용도로 table 태그 대신 div 에 float 속성을 부여하는 방향으로 사용.
+      html5 이후 부터는 display 속성에 flex, grid 추가 하여 레이아웃에 사용.
+
+      *float 속성
+      float 의 사전적 의미는 '떠오르다','떠다니다'.
+      웹 페이지에서는 float 을 왼쪽이나 오른쪽에 배치할 때 사용하며
+      배치를 하지 않을 경우 'none' 으로 표현.
+
+      삽화 사용뿐 아니라, 레이아웃(block)을 나열할 때 많이 사용.
+      기본적으로 레이아웃을 형성시에 가장 많이 사용하는 태그.
+
+      left : 문서의 왼쪽으로 배치. 블록 박스를 왼쪽으로 부터 나열하고 싶을때 사용.
+      right : 문서의 오른쪽으로 배치. 블록 박스를 오른쪽으로 부터 나열하고 싶을때 사용
+      none : 배치하지 않음. 정렬하지 않음.
+
+      * left 와 right 를 통해 나열 속성을 지정하면 display 의 개념은 무시됨. (none 은 제외)
+     */
+    .camera{
+      float: left;
+    }
+  </style>
+</head>
+<body>
+    <img src="img/camera01.png" class="camera" alt="camera01">
+    <h2>TITLE-1</h2>
+    <p>
+      Lorem ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+</body>
+</html>

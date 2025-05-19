@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-size: 10px;
+		}
+		div, table{
+			width: 600px;
+			margin: 0 auto;
+		}
+		table {
+            border-collapse: collapse;
+			border-spacing: 0;
+        }
+		div{
+			padding-top: 10px;
+		}
+		td, th{
+			border: 1px solid black;
+			padding: 8px;
+		}
+		th{
+			width: 120px;
+			background-color: #eaeaea;
+			text-align: center;
+		}
+
+		input[type=text], input[type=tel], input[type=password], input[type=email]{
+				border: 1px solid #ccc;
+				padding: 4px;
+        }
+
+		/*특성*/
+		.title{
+			text-align: right;
+		}
+		.effect{
+			color: #46c4f6;
+		}
+
+		.noLine{
+			border: none;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.star{
+			color: red;
+		}
+		.bodernone{
+			border: none;
+            border-bottom: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form action="./action.php" method="post">
+		<table class="bodernone">
+			<tr class="noLine">
+				<td class="noLine"><h3>회원가입</h3></td>
+				<td class="title noLine">홈 > 회원 > <span class="effect">회원가입</span></td>
+			</tr>
+		</table>
+		<div>
+			<span class="star">*</span>필수입력사항
+		</div>
+		<table>
+			<tr>
+				<th><label for="id">아이디<span class="star">*</span></label></th>
+				<td><input type="text" name="id" id="id"> 영문자, 숫자, _만 입력 가능. 최소 3자이상 입력하세요.</td>
+			</tr>
+			<tr>
+				<th><label for="pw">비밀번호<span class="star">*</span></label></th>
+				<td><input type="password" name="password" id="pw"> 영문자,영문자,숫자,특수문자 중 2종류 이상의 조합으로 10자이상 입력하세요.</td>
+			</tr>
+		</table>
+		<style>
+			.center{
+				text-align: center;
+			}
+			input[type=submit], input[type=reset]{
+				color: #fff;
+				padding: 10px;
+				border: none;
+				cursor: pointer;
+				margin: 0 2px;
+            }
+			input[type=submit]{
+				background-color: #46c4f6;
+			}
+			input[type=reset]{
+				background-color: #ccc;
+			}f
+		</style>
+		<div class="center">
+			<input type="submit" value="회원가입">
+			<input type="reset" value="취소">
+		</div>
+
+	</form>
+</body>
+</html>

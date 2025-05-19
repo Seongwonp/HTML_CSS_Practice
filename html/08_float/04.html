@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+
+    /*
+        float 속성으로 박스를 배치하면 이어지는 요소들도 동일한 속성이 적용.
+        float 속성이 더 이상 필요하지 않다면 기존 속성을 해제하기 위한 clear 속성을 사용.
+
+        *clear
+        float: left 를 이용해 왼쪽으로 배치했다면 clear: left 로 종료
+        float: right 로 배치했다면 clear: right 로 속성을 해제
+
+        1) 두 개를 동시에 해제하거나, 2) left 인지 right 인지 확인하기 어려우면 clear: both 로 지정하여 float 정렬을 취소할 수 있음.
+
+        clear: left - 왼쪽으로 붙는 float 정렬을 취소
+        clear: right - 오른쪽으로 붙는 float 정렬을 취소
+        clear: both - 왼쪽, 오른쪽으로 붙는 float 정렬을 취소
+        clear: none - clear 속성을 설정하지 않은 것과 같음
+
+     */
+
+    div{
+      width:300px;
+      height: 300px;
+      border: 2px solid black;
+    }
+    .box1{
+      float: left;
+    }
+    .box2{
+      float: left;
+    }
+    .box3{
+      float: left;
+    }
+    .clear{
+      clear: both;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="box1">01</div>
+  <div class="box2">02</div>
+  <div class="box3">03</div>
+  <div class="clear">04</div>
+  <div>05</div>
+  <div>06</div>
+  <div>07</div>
+</body>
+</html>

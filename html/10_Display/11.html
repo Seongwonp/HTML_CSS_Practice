@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      * 목록 스타일 지정
+        목록 태그에 스타일을 지정하는 방법으로 순서가 없는 항목(ul), 순서가 잇는 항목(ol) 태그에 적용.
+
+      * list-style-type 속성
+		순서가 없는 항목 태그와 순서가 있는 항목 태그 앞에 나오는 블릿과 번호 스타일을 변경
+		순서가 없는 항목은 블릿 모양으로 선택이 가능하며
+		순서가 있는 항목은 숫자 형태로 나타낼 수 있슴
+
+	  * 순서가 없는 항목의 속성
+		none : 블릿 없애기
+		disc : 채운 원
+		circle : 빈원
+		square : 채운 사각형
+
+     */
+    .bullet_circle {
+      list-style-type: upper-roman;
+    }
+    .bullet_none {
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <!--블릿 변경하기-->
+  <ul class="bullet_circle">
+    <li>회사소개</li>
+    <li>생산설비</li>
+    <li>제품소개</li>
+    <li>온라인문의</li>
+    <li>커뮤니티</li>
+  </ul>
+  <!--블릿 없애기-->
+  <ul class="bullet_none">
+    <li>회사소개</li>
+    <li>생산설비</li>
+    <li>제품소개</li>
+    <li>온라인문의</li>
+    <li>커뮤니티</li>
+  </ul>
+</body>
+</html>

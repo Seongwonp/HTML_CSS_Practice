@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    /*
+      *background-attachment 속성
+
+      배경 이미지를 어떤 방식으로 넣을 것인지 지정하는 스타일 속성.
+      세로가 길어야 확인이 가능해서 body 선택자에 높이를 지정해서 스크롤이 생기게 함.
+
+      background-attachment : fixed, scroll / 스크롤에 따를 조정
+
+      scroll : 기본값, 스크롤 바의 움직임에 따라 배경 이미지도 움직임
+      fixed : 브라우저 화면에서 스크롤 바를 움직이더라도 배경 이미지는 고정되어 있음
+
+     */
+    body{
+      background-image: url("./img/art.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 20000px; /* 브라우저 화면에 세로 스크롤 바를 생성시키기 위해 높이값 적용. */
+      background-attachment: fixed; /* 브라우저 화면에서 스크롤 바를 움직이더라도 배경 이미지는 고정되어 있음 */
+
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>

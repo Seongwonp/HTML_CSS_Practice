@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      :nth-child(수열)  :  부모박스 안에서 형제 관계 중에서 "앞에서" 수열번째의 태그 선택
+	  :nth-last-child(수열)  :  부모박스 안에서 형제 관계 중에서 "뒤에서" 수열번째의 태그 선택
+
+		* 자주 사용하는 수열에는 숫자번째(숫자), 짝수열(2n), 홀수열(2n+1)
+     */
+
+    li{
+      list-style: none;
+      float: left;
+      padding: 15px;
+    }
+
+
+
+    li:nth-child(2n){
+      background-color: orange;
+    }
+
+    li:nth-child(2n+1){
+      background-color: #4c9ee6;
+    }
+
+    li:first-child{
+      border-radius: 6px 0 0 6px;
+    }
+    li:last-child{
+      border-radius: 0 6px 6px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fourth</li>
+    <li>fifth</li>
+    <li>sixth</li>
+    <li>seventh</li>
+  </ul>
+</body>
+</html>
