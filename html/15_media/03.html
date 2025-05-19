@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		iframe {
+			display: block;
+        }
+	</style>
+</head>
+<body>
+	<!--
+		*<iframe> 태그를 이용한 웹문서에 유튜브 영상 불러오기
+		iframe : 내부프레임 / html 문서안에 html 문서가 존재
+		긴내용의 문서, 유튜브영상 등 큰 용량의 영상을 간단하게 링크로 가져올때 많이 사용.
+
+		width = 넓이를 지정. 픽셀 또는 백분율 값
+		height = 높이를 지정. 픽셀 또는 백분율 값
+		name = 현재의 iframe 이름
+		src = iframe 에 표시할 문서의 주소를 지정
+
+	-->
+	<h1>Link YouTube</h1>
+	<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/L9CLOw85neo?si=PYRdUy7nbVk0CnTi"
+			title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h1>Link WebSite</h1>
+	<!-- 외부 소스 -->
+	<h3>StarBucks</h3>
+	<iframe src="https://www.starbucks.co.kr/index.do" width="560" height="800"></iframe>
+	<!-- 외부 소스의 경우 특정 사이트는 서버에서 iframe 으로 불러가는 것을 막음 -->
+	<h3>Naver</h3>
+	<iframe src="https://www.naver.com" width="560" height="800"></iframe>
+</body>
+</html>

@@ -8,6 +8,24 @@
 	</style>
 </head>
 <body>
+	<!--
+		* <audio> 태그를 이용한 오디오 파일 넣기
 
+		html5 에서 음악이나 오디오같은 사운드를 재생하기 위해 사용,
+		태그하나만으로 멀티미디어 기기에서 재생이 가능.
+
+		src = 오디오 파일의 위치를 연결
+		autoplay = "자동 재생" -> 크롬 브라우저가 업데이트 되면서 지원이 안됨
+		controls = 웹 화면에서 재생 컨트롤 막대 표시
+		muted = 오디오가 재생중이지만 소리를 끔(음소거)
+		preload = 재생버튼을 눌러 재생하기 전ㄹ에 오디오 파일을 다운로드해 준비
+		loop = 오디오를 반복 재생
+
+
+	 -->
+	<div>
+		<h1>Audio</h1>
+		<audio src="./media/test_ado.mp3" controls></audio>
+	</div>
 </body>
 </html>

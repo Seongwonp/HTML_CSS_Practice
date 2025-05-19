@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+  <!--
+        * <video> 태그를 이용한 영상 파일 넣기
+        html5 에서 영상을 실행시키기 위해 사용. 비디오와 같은 영상 스트리밍을 재생할때 사용.
+
+        controls = 비디오 재생 컨트롤 막대표시. 재생 중에는 화면에 컨트롤 막대가 표시되지 않지만
+                   화면 위로 마우스 포인터를 옮기면 컨트롤 막대가 나타남
+        loop = 비디오를 반복 재생
+        autoplay = 비디오를 자동 재생
+        muted = 음소거. 비디오는 재생
+        src = 비디오 파일의 위치를 연결
+
+        width = 비디오 화면의 넓이를 지정
+        height = 비디오 화면의 높이를 지정
+        poster = 비디오 재생 시작전 준비화면. 시작이미지(url 연결) - 연결하지 않을 시 영상의 시작화면
+   -->
+  <div>
+    <h1>Video</h1>
+    <video src="media/korea_video.mp4"
+		   poster="media/bg.png"
+		   controls width="800" height="400"
+		   autoplay="autoplay"></video>
+  </div>
+</body>
+</html>
