@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+        /*
+			* z-index : 위치 속성에서 박스의 우선 순위를 변경하고자 할 때 사용.
+			z-index 는 숫자가 클수록 상위 순서로 변경됨.
+		 */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+		body{
+			height: 3000px;
+		}
+
+        div {
+            width: 300px;
+            height: 300px;
+            border: 4px solid #000;
+            margin-left: 30px;
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+			position: absolute;
+        }
+
+		div:nth-child(1){
+			background: red;
+			top: 100px;
+			left: 100px;
+			z-index: 2;
+        }
+		div:nth-child(2){
+			background: blue;
+			left: 250px;
+			top: 250px;
+			z-index: 1;
+        }
+        div:nth-child(3){
+            background: green;
+            left: 400px;
+            top: 400px;
+        }
+	</style>
+</head>
+<body>
+	<div>box-1</div>
+	<div>box-2</div>
+	<div>box-3</div>
+</body>
+</html>

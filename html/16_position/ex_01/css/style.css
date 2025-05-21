@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+li{
+    list-style: none;
+}
+body{
+    background: #ccc;
+}
+img{
+    display: block;
+    border: 0;
+}
+
+#wrapper{
+    width: 1600px;
+    margin: 0 auto;
+    background: #46c4f6;
+}
+
+header{
+    width: 200px;
+    height: 100%;
+    background: black;
+    position: fixed;
+}
+
+#wrapper > header h1{
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+#wrapper > header nav{
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+#wrapper > header nav h4{
+    color: white;
+    padding: 10px;
+}
+
+#wrapper > header nav ul li{
+    padding: 10px;
+    font-size: 14px;
+}
+#wrapper > header nav ul a span{
+    color: #a0fc00;
+}
+
+#wrapper > header nav ul a:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+#wrapper > header nav .searchBox{
+    margin-top: 10px;
+}
+
+#wrapper > header nav .searchBox input{
+    height: 30px;
+    border: 1px solid gray;
+}
+
+#wrapper > header nav .searchBox input[type="text"]{
+    width: 90px;
+    background: dimgray;
+    margin-right: 0;
+}
+
+#wrapper > header nav .searchBox input[type="submit"]{
+    width: 60px;
+    border: 1px solid gray;
+    background: black;
+    color: gray;
+    margin-left: 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1600px) {
+    header{
+        overflow: scroll;
+    }
+}
+
+
+section{
+    margin-left: 200px;
+    width: 1400px;
+    height: 3000px;
+    background: #ffd500;
+}
+
+section article:nth-child(1){
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+section .playButton{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+section article:nth-child(2){
+    width: 1200px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+section article:nth-child(2) ul{
+    width: 100%;
+}
+section article:nth-child(2) ul li{
+    float: left;
+    width: 254px;
+    margin: 20px;
+    border-bottom: 4px solid rgba(0,0,0,0.2);;
+    border-right: 4px solid rgba(0,0,0,0.2);;
+}
+
+
+
+
+
+
+
+

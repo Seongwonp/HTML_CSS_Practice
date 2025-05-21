@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body > div {
+      border: 2px solid red;
+      margin-bottom: 20px;
+    }
+
+    body > div > div {
+      width: 100px;
+      height: 100px;
+      border: 2px solid;
+      border-radius: 10px;
+    }
+
+    body > div:nth-of-type(1) {
+      height: 104px;
+    }
+    body > div:nth-of-type(1) div {
+      float: left;
+    }
+
+
+    body > div:nth-of-type(2) {
+      font-size: 0;
+    }
+    body > div:nth-of-type(2) div {
+      display: inline-block;
+    }
+
+
+    body > div:nth-of-type(3){
+      display: flex;
+
+    }
+
+
+  </style>
+</head>
+<body>
+<!-- float, inline-block, flex 사용해서 요소를 수평으로 정렬하기 -->
+<h2>요소를 수평으로 정렬하기</h2>
+
+<h4>float 사용</h4>
+<div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h4>inline-block 사용</h4>
+<div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h4>flex 사용</h4>
+<div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    #container{
+      border: 2px solid red;
+    }
+
+
+	/*	align-items: stretch : 부모 요소의 높이 또는 콘텐츠의 가장 높이가 높은 자식 요소의 높이에 맞춰 늘어남. 초기값*/
+	#container{
+		display: flex;
+		align-items: center;
+	}
+
+    .item{
+      padding: 10px;
+      margin: 10px;
+      background: #0bd;
+      color:#fff;
+    }
+	.item:nth-child(2){
+		padding: 20px;
+	}
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+	<div class="item">Item 5</div>
+	<div class="item">Item 6</div>
+  </div>
+</body>
+</html>

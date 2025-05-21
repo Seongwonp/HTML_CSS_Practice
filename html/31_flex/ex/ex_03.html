@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    #container{
+      border: 2px solid red;
+    }
+/*
+	*flex-direction : 자식 요소의 정렬 방향
+
+	row: 자식 요소를 왼쪽에서 오른쪽으로 배치. 기본값
+	row-reverse: 자식 요소를 오른쪽에서 왼쪽으로 배치
+	column : 자식 요소를 위에서 아래로 배치
+	column-reverse : 자식 요소를 아래에서 위로 배치
+
+	*flex-direction 이 column 인 경우
+	너비를 지정하지 않은 경우 너비가 100%로 정해짐. block 속성과 유사.
+
+ */
+
+
+	#container{
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+    .item{
+      padding: 10px;
+      margin: 10px;
+      background: #0bd;
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+</body>
+</html>

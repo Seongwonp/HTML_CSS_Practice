@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        main{
+            width: 100%;
+            height: 100vh; /* vh: Vertical Height. 화면 기준 높이 */
+            background: lightcyan;
+        }
+
+        section {
+            border: 10px solid blue;
+        }
+
+        section article{
+            width: 100px;
+            height: 100px;
+            background: lightcyan;
+            border: 1px solid black;
+        }
+        /*
+			* flex-warp - 자식 요소에 줄 바꿈 적용하기
+			float 속성을 사용하여 레이아웃을 만들 때 모든 자식 요소의 총 너비 값이
+			부모 요소의 너비 값보다 크면 자동으로 줄 바꿈이 되지만
+			flex 속성에서는 flex-wrap 을 설정해야 줄 바꿈을 할 수 있음
+
+			flex-wrap : nowrap - 자식 요소의 줄 바꿈을 하지 않음. 기본 값
+			flex-wrap : wrap   - 자식 요소의 줄 바꿈을 함
+			flex-wrap : wrap-reverse - 자식 요소를 줄바꿈. 여러 줄이 되면 아래에서 위로 배치
+		 */
+        section{
+			display:flex;
+
+			/*flex-direction: row;*/
+            /*flex-wrap: wrap;*/
+
+			/* flex-flow 를 사용해 flex-direction, flex-wrap 속성을 한꺼번에 적용하기 */
+			flex-flow: row wrap;
+        }
+
+	</style>
+</head>
+<body>
+    <main>
+		<section>
+			<article>1</article>
+			<article>2</article>
+			<article>3</article>
+			<article>4</article>
+			<article>5</article>
+			<article>6</article>
+			<article>7</article>
+		</section>
+	</main>
+</body>
+</html>

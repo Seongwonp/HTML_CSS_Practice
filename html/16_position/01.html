@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+      *position 속성
+      위치 속성. 어디에 어떻게 위치시킬지 지정하는 속성.
+
+      *함께 적용가능한 속성
+      top - y 축 상단 기준
+      bottom - y 축 하단기준
+      left - x 축 좌단 기준
+      right - x축 우측 기준
+      z-index - z 측 위치 상 우선 순위 변경 ( z-index: 숫자가 클수록 상위 순서에 배치 1~9999까지 존재 )
+
+      *각 요소의 위치를 정하는 방법
+      상대 위치 좌표 : 태그 요소 입력한 순서를 통해 상대적으로 위치를 지정
+      절대 위치 좌표 : 태그 요소로 만들어진 X 좌표와 Y 좌표를 설정해 절대 위치를 지정
+
+      * static : 태그가 위에서 아래로 순서대로 배치되며 position 속성을 지정하지 않으면 기본 값으로 지정
+      뷰여하지 않아도 적용되는 기본값 (정적위치 지정방식)
+      다른 박스에 영향을 주며 작성한 순서대로 나열 (위치지정불가)
+      top, left, right, bottom 의 영향을 받지 않음.
+
+     */
+
+    *{ margin: 0; padding: 0; box-sizing: border-box; }
+    div{
+      width: 300px;
+      height: 300px;
+      border: 4px solid #000;
+      margin-left: 30px;
+      font-size: 30px;
+      align-content: center;
+      text-align: center;
+
+      position: static;
+	  top: 100px;
+	  left: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>static-1</div>
+  <div>static-2</div>
+  <div>static-3</div>
+</body>
+</html>

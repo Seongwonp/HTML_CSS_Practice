@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{margin: 0; padding: 0; box-sizing: border-box;}
+		main{
+			width: 100%;
+			height: 100vh; /* vh: Vertical Height. 화면 기준 높이 */
+			background: lightcyan;
+		}
+
+		section {
+			border: 10px solid blue;
+		}
+
+		section article{
+			width: 100px;
+			height: 100px;
+			background: lightcyan;
+			border: 1px solid black;
+		}
+
+		section article{
+			/* float: left */
+			/*display: inline-block;*/
+		}
+
+		/*
+		    * 자식 요소의 배치방법 지정하기
+
+		    display: flex - 1) 자신은 블록 속성을 유지하면서 2) 자식 요소에 flex 환경 설정. 플렉스 박스를 레벨 요소로 정의
+		    display: inline-flex - 2) 자신은 인라인 속성으로 변경하면서 2) 자식 요소에 flex 환경 설정. 플렉스 박스를 인라인 레벨 요소를 정의.
+
+		    특징은 float, inline-block 처럼 배치할 요소에 속성을 지정하는 것이 아니라 부모 요소(컨테이너)에 속성을 지정.
+
+		 */
+		section{
+			display:inline-flex;
+		}
+
+	</style>
+</head>
+<body>
+    <main>
+		<section>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+		</section>
+	</main>
+</body>
+</html>

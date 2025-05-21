@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top, #box_all, #footer {
+    width: 1000px;
+    display: flex;
+}
+
+#top {
+    height: 500px;
+}
+
+#box_all {
+    background-color: yellow;
+    height: 500px;
+}
+
+#footer {
+    margin-top: 0;
+    height: 50px;
+}
+
+/* #top child */
+#top > div:nth-child(1) {
+    background-image: url("../img/0320-1.jpg");
+    width: 750px;
+}
+
+#top > div:nth-child(1) div {
+    width: 250px;
+    height: 250px;
+    margin-top: 250px;
+    padding: 16px;
+}
+
+#top > div:nth-child(1) div h4 {
+    margin-bottom: 10px;
+}
+
+#top > div:nth-child(2) {
+    width: 250px;
+}
+
+#top > div:nth-child(2) div {
+    height: 250px;
+}
+
+/* #box_all child */
+#box_all > ul {
+    width: 750px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+#box_all > ul > li {
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#box_all > ul > li:nth-child(2n+1) {
+    background-color: red;
+    color: white;
+}
+
+#box_all > ul > li:nth-child(2n) {
+    background-color: orange;
+}
+
+#box_all > ul > li> p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#box_all > div {
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+}
+
+/* footer child */
+#footer > div {
+    width: 750px;
+    height: 50px;
+    background-color: gray;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+#footer > div > ul {
+    width: 750px;
+}
+
+#footer > div > ul > li {
+    border-right: 1px dotted orange;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#footer > div > ul > li:last-child {
+    border-right: none;
+}
+
+#footer > div > ul > li:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#footer > div:nth-child(2) {
+    width: 250px;
+    background-color: black;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
