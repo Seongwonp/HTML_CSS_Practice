@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    .container {margin-bottom: 30px; border: 1px solid #222; background-color: #eee;}
+    .box {width: 80px; margin: 5px; padding: 5px 45px;}
+    .box:nth-child(odd) {background-color: rgb(255, 187, 0);}
+    .box:nth-child(even) {background-color: rgb(35, 220, 35);}
+    p {text-align: center; font-weight: bold;}
+
+    /*
+      * align-self
+      특정 플렉스 항목만 정렬 방법을 지정할 때 사용.
+      예를 들어 여러 이미지가 플렉스 컨테이너 안에 있을 떼 align-self 속성을 사용해서 특정 이미지만 다르게 배치할 수 있음
+     */
+
+    .container{
+      display: flex; height: 150px; align-items: center;
+    }
+
+    #opt1 div:nth-child(1){
+      align-self: flex-start;
+    }
+
+    #opt1 div:nth-child(3){
+      align-self: stretch;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
+</body>
+</html>

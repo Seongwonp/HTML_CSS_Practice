@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    .container {margin-bottom: 30px; border: 1px solid #222; background-color: #eee;}
+    .box {width: 80px; margin: 5px; padding: 5px 45px;}
+    .box:nth-child(odd) {background-color: rgb(255, 187, 0);}
+    .box:nth-child(even) {background-color: rgb(35, 220, 35);}
+    p {text-align: center; font-weight: bold;}
+
+    /*
+        * gap
+        플렉스 컨테이너 안에 있는 여러 플랙스 항목의 간격을 조정할 때 사용.
+        이 속성은 플렉스 컨테이너에 적용하므로 (마진은 플렉스 항목에 지정) 컨테이너 안에 있는 항목에 모두 똑같이 적용.
+        가로 세로 간격을 따로 조절하고 싶다면 row-gap 과 colum-gap 으로 값을 따로 지정하면 됨.
+
+        *margin 과의 차이점
+        margin 을 사용하면 옆에 다른 요소가 없더라도 요소 주변에 간격이 적용.
+        반면에 gap 을 사용하면 인접한 요소가 있을 때만 간격이 적용.
+
+     */
+
+    .container{
+      display: flex;
+      align-items: center;
+      width: 650px;
+      height: 150px;
+      /*gap: 10px;*/
+    }
+    .box{ padding: 10px; margin: 0;}
+    /* margin 으로도 가능 */
+    .box{
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+</body>
+</html>

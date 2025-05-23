@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    .container {margin-bottom: 30px; border: 1px solid #222; background-color: #eee;}
+    .box {width: 80px; margin: 5px; padding: 5px 45px;}
+    .box:nth-child(odd) {background-color: rgb(255, 187, 0);}
+    .box:nth-child(even) {background-color: rgb(35, 220, 35);}
+    p {text-align: center; font-weight: bold;}
+
+    /*
+      *플렉스 박스 레이아웃을 만드는 순서.
+      1) CSS를 사용해 적용할 대상을 플렉스 컨테이너로 지정
+      2) 플랙스 컨테이너안에 플렉스 항목 작성하기
+      3) CSS 를 사용해 주축과 교차축 지정하기
+      4) CSS 를 사용해 교차축의 배치 방법 지정하기
+
+      * 플렉스 컨테이너의 배치 관련 속성
+      justify-content : 주축의 정렬 방법
+      align-items : 교차축의 정렬방법
+
+     */
+
+    .container{
+      display: flex; width: 700px;
+    }
+    /* 왼쪽에서 오른쪽*/
+    #opt1{
+      flex-direction: row;
+
+    }
+    /* 오른쪽에서 왼쪽으로 */
+    #opt2{
+      flex-direction: row-reverse;
+    }
+    /* 위에서 아래로 */
+    #opt3{
+      flex-direction: column;
+    }
+
+    /* 아래에서 위로 */
+    #opt4{
+      flex-direction: column-reverse;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
+  <div class="container" id="opt2">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
+  <div class="container" id="opt3">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
+  <div class="container" id="opt4">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
+</body>
+</html>

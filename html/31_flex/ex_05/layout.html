@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      div {
+		  background-image: url('img/bg5.jpg'); /* 배경 이미지 */
+          background-repeat: no-repeat; /* 반복하지 않음 */
+          background-position: left top; /* 이미지 위치: 왼쪽 상단 */
+          background-attachment: fixed; /* 배경 고정 */
+          background-size: cover;
+          min-height: 100vh; /* 브라우저 높이의 100% */
+      }
+
+	  div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+	  }
+
+	  /*
+	  이것도 가능
+	  div{
+		  text-align: center;
+		  align-content: center;
+	  }*/
+
+
+      button {
+          background-color: #ccc;
+          font-size: 1.2em;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 1px 1px 2px #fff;
+      }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <button>클릭!</button>
+  </div>
+</body>
+</html>

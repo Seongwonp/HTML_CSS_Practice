@@ -1,0 +1,164 @@
+*{margin:0;padding:0; box-sizing: border-box;}
+img{display: block; border: none;}
+a{ text-decoration: none; color:black;}
+li{list-style: none;}
+hr{border: 1px solid #ececec; margin-bottom: 10px;}
+header, section{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/********************* header *********************/
+/* header style */
+header h3{
+    padding: 30px;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+header div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+header div ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div ul li a img{
+    height: 53px;
+    object-fit: contain;
+}
+header div ul li a span{
+    display:block;
+    text-align: center;
+}
+header div ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+/********************* section **********************/
+
+section article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    margin-bottom: 10px;
+}
+section article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* section article-1 style */
+section article:first-child div{
+    height: 633px;
+}
+section article:first-child div div{
+    border: 3px solid black;
+    background: white;
+    margin-top: 10px;
+    width: 100%;
+}
+section article:first-child div div p{
+    background: purple;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+section article:first-child div div h2{
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* section article-2 style */
+section article:nth-child(2) div:first-child{
+    height: 1060px;
+}
+
+/* section article-3 style */
+section article:nth-child(3){
+    flex-direction: column;
+}
+
+/* section article-4 style */
+section article:nth-child(4) div{
+    height: 726px;
+}
+section article:nth-child(4) div div{
+    flex-direction: row;
+    height: 200px;
+}
+section article:nth-child(4) div div p{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+section article:nth-child(4) div div input[type="email"]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+section article:nth-child(4) div div input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    border: 0;
+}
+a {
+    color: #000;
+}
+
+
+
+#top, #banner, #content, #bottom {
+    width: 100%;
+}
+
+#top{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#banner{
+    height: 464px;
+    background-image: url(img/picture01.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contents{
+    height: 400px;
+}
+#bottom{
+    background-color: #ececec;
+    height: 304px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* top child */
+
+#top ul{
+    width: 1000px;
+    text-align: center;
+    padding-top: 30px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cdcdcd;
+}
+#top ul li{
+    padding: 0 30px;
+    font-size: 16px;
+}
+#top ul li:nth-child(4){
+    height: 50px;
+
+}
+#top ul li:last-child{
+    border-right: none;
+}
+
+#top ul li:hover{
+    background-color: #fba5a5;
+    cursor: pointer;
+}
+#top ul li:nth-child(4):hover, #top ul li:last-child:hover{
+    cursor: default;
+    background-color: #fff;
+}
+
+/* banner child */
+#banner > section{
+    background-color: #f6f3b1;
+    height: 230px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner > section > p{
+    font-size: 10px;
+}
+
+#banner > section > article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding-top: 10px;
+}
+#banner > section > article > input{
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+
+#banner > section > article > input[name="zipcode"]{
+    background-color: #fff;
+}
+#banner > section > article > input[name="menu"]{
+    background-color: orange;
+    color: white;
+}
+
+/* contents child */
+#contents > section:first-child{
+    height: 120px;
+    background-color: #fff;
+
+}
+#contents > section:first-child > article{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#contents > section:nth-child(2){
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contents > section:nth-child(2) > ul{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#contents > section:nth-child(2) > ul > li{
+    width: 200px;
+    height: 170px;
+    padding: 5px;
+    border-bottom: 2px solid #cdcdcd;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+}
+
+
+/* bottom child */
+#bottom > section{
+    width: 914px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom > section > article:nth-child(1){
+    width: 460px;
+    margin-top: 30px;
+    text-align: left;
+}
+#bottom > section > article:nth-child(1) > p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#bottom > section > article:nth-child(2){
+    width: 314px;
+
+}
